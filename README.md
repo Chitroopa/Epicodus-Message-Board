@@ -12,6 +12,14 @@ Epicodus message board allows Epicodus students to ask technical questions that 
   * firebase db - create firebase db for this project
   * moment - display date format
 
+2. Specs
+  * Spec 1: Questions should include the content of the question itself, an author, and additional notes.
+  * Spec 2: Answers should include the content of the answer and the author.
+  * Spec 3: Include a header and/or navbar that appears on all pages. It should contain the name of your site and a link to the home page, and other content such as social media, LinkedIn, etc.
+  * Spec 4: List all questions on the homepage, displaying only the question and the name of the author.
+  * Spec 5: Allow users to click a question, to be routed to another page containing additional information and question details.
+  * Spec 6: Allow users to add and edit questions.
+  * Spec 7: Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
 
 ## Prerequisites
 
@@ -24,8 +32,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd epicodus-message-board`
+* `git clone https://github.com/Chitroopa/Epicodus-Message-Board`
+* `cd Epicodus-Message-Board`
 * `npm install`
 
 ## Running / Development
