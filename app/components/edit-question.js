@@ -31,9 +31,7 @@ export default Ember.Component.extend({
           shortContent : this.get('content'),
         }
       }
-
-
-      console.log(params);
+      
       this.set('editQuestion', false);
       this.sendAction('updateQuestion2', question, params);
 

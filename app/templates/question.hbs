@@ -2,6 +2,7 @@
   <h3>{{model.title}}</h3>
   <p>{{model.created}}</p>
   <p>{{model.content}}</p>
+  <p>Notes: {{model.notes}}</p>
   {{edit-question question=model updateQuestion2="updateQuestion3" deleteQuestion2="deleteQuestion3"}}
   <hr>
   <h4>Answers</h4>
@@ -11,7 +12,7 @@
     <div class="row">
       <h5>{{answer.answer}}</h5>
       <p>by {{answer.author}} {{answer.created}} </p>
-      
+      {{edit-answer question=model answerForQuestion=answer updateAnswer2="updateAnswer3" deleteAnswer2="deleteAnswer3"}}
       <hr>
     </div>
   {{/each}}
