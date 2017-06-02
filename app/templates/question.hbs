@@ -2,6 +2,18 @@
   <h3>{{model.title}}</h3>
   <p>{{model.created}}</p>
   <p>{{model.content}}</p>
+  <h4>Answers</h4>
 </div>
+{{#if model.answers}}
+  {{#each model.answers as |answer|}}
+    <div class="row">
+      <h5>{{answer.answer}}</h5>
+      <p>by {{answer.author}} {{answer.created}} </p>
+    </div>
+    <hr>
+  {{/each}}
+{{else}}
+  <p class="test-font">No answers yet</p>
+{{/if}}
 
 {{new-answer saveAnswer2="saveAnswer3" question=model}}
