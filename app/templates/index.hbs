@@ -2,8 +2,8 @@
 <h1>Home page</h1>
 {{#each model.questions as |question|}}
   <div class="blog-post">
-    <div class="post-title">{{question.title}}</div>
-    <p class="blog-post-meta">{{question.created}}</p>
+    <h3>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h3>
+    <p>{{question.author}}</p>
     <br>
     <!-- {{#link-to 'question' question.id}}Read More{{/link-to}} -->
   </div>
