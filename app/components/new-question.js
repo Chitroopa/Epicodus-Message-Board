@@ -9,8 +9,9 @@ export default Ember.Component.extend({
     saveQuestion1() {
       var params = {
         title: this.get('title'),
-        content: this.get('content'),
-        shortContent : (this.get('content').slice(0, 100)).concat("..."),
+        // content: this.get('content'),
+        content: $('#content').val(),
+        shortContent : ($('#content').val().slice(0, 100)).concat("..."),
         author: this.get('author'),
         notes: this.get('notes'),
       };

@@ -35,7 +35,7 @@ export default Ember.Route.extend({
     },
     updateAnswer3(answer, params) {
       Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
+        if(params[key]!==undefined && params[key]!=="") {
           answer.set(key,params[key]);
         }
       });

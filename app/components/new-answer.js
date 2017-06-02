@@ -3,8 +3,10 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     saveAnswer1() {
+      var regex = "/\n/g"
       var params = {
-        answer: this.get('answer'),
+        answer: $('#answer').val(),
+        // answer: this.get('answer'),
         author: this.get('author'),
         question: this.get('question')
       };

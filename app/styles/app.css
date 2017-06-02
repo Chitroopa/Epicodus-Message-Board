@@ -1,3 +1,6 @@
 .test-font {
   color: red;
 }
+.text-style {
+  white-space: pre-wrap;
+}

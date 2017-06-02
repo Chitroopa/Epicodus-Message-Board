@@ -15,23 +15,24 @@ export default Ember.Component.extend({
       {
         var params = {
           title: this.get('title'),
-          content: this.get('content'),
+          // content: this.get('content'),
+          content: $('#update-content').val(),
           author: this.get('author'),
           notes: this.get('notes'),
-          shortContent : (this.get('content').slice(0, 100)).concat("..."),
+          shortContent : ($('#update-content').val().slice(0, 100)).concat("..."),
         }
       }
       else
       {
         var params = {
           title: this.get('title'),
-          content: this.get('content'),
+          content: $('#update-content').val(),
           author: this.get('author'),
           notes: this.get('notes'),
-          shortContent : this.get('content'),
+          shortContent: $('#update-content').val(),
         }
       }
-      
+
       this.set('editQuestion', false);
       this.sendAction('updateQuestion2', question, params);
 
