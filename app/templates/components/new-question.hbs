@@ -9,6 +9,7 @@
       <div class="form-group">
         {{textarea rows="8" cols="50" class="form-control" id="content" value=content placeholder="Explain your question"}}
       </div>
+      <hr>
       <div class="form-group">
         <label>Additional notes</label>
         {{input type="text" class="form-control" value=notes id="notes"}}
@@ -17,11 +18,11 @@
         <label>Author</label>
         {{input type="text" class="form-control" value=author id="author" placeholder="Add author"}}
       </div>
+      <hr>
       <button {{action 'saveQuestion1'}} class="btn btn-primary">Post your Question</button>
     </form>
   </div>
 </div>
-
 {{else}}
   <button {{action 'questionFormShow'}} class="btn btn-primary">Ask Question</button>
 {{/if}}
