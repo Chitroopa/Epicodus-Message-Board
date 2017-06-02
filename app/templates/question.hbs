@@ -1,19 +1,28 @@
+<div class="row question-color">
+  <div class="col-md-12">
+    <h3>{{model.title}}</h3>
+    <!-- <p>{{moment-format model.created 'L'}}</p> -->
+    <p>{{model.created}}</p>
+    <p class="text-style">{{model.content}}</p>
+    <p>Notes: {{model.notes}}</p>
+    {{edit-question question=model updateQuestion2="updateQuestion3" deleteQuestion2="deleteQuestion3"}}
+    <hr>
+  </div>
+</div>
 <div class="row">
-  <h3>{{model.title}}</h3>
-  <p>{{model.created}}</p>
-  <p class="text-style">{{model.content}}</p>
-  <p>Notes: {{model.notes}}</p>
-  {{edit-question question=model updateQuestion2="updateQuestion3" deleteQuestion2="deleteQuestion3"}}
-  <hr>
-  <h4>Answers</h4>
+  <div class="col-md-12">
+    <h2>Answers</h2>
+  </div>
 </div>
 {{#if model.answers}}
   {{#each model.answers as |answer|}}
     <div class="row">
-      <h5 class="text-style">{{answer.answer}}</h5>
-      <p>by {{answer.author}} {{answer.created}} </p>
-      {{edit-answer question=model answerForQuestion=answer updateAnswer2="updateAnswer3" deleteAnswer2="deleteAnswer3"}}
-      <hr>
+      <div class="col-md-12">
+        <h5 class="text-style">{{answer.answer}}</h5>
+        <p>by {{answer.author}} {{answer.created}} </p>
+        {{edit-answer question=model answerForQuestion=answer updateAnswer2="updateAnswer3" deleteAnswer2="deleteAnswer3"}}
+        <hr>
+      </div>
     </div>
   {{/each}}
 {{else}}

@@ -1,10 +1,15 @@
+<h1>Epicodus message board</h1>
+<p>Click below button to ask question</p>
 {{new-question saveQuestion2="saveQuestion3"}}
-<h1>Home page</h1>
+<hr>
+<h3>Top questions</h3>
+<hr>
+
 {{#each model.questions as |question|}}
   <div class="blog-post">
     <h3>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h3>
     <p>{{question.author}}</p>
     <p>{{question.shortContent}}</p>
-    <br>
+    <br><hr>
   </div>
 {{/each}}

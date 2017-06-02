@@ -7,30 +7,11 @@ Epicodus message board allows Epicodus students to ask technical questions that 
 ## Planning
 
 1. Configuration/dependencies
-  * Emberfire, firebase db
+  * Emberfire, firebase db, moment
   * Emberfire - allows to connect with firebase database
   * firebase db - create firebase db for this project
+  * moment - display date format
 
-2. Specs
-  * Spec 1: Description, input, output.
-  * Spec 2: Description, input, output.
-
-3. Integration
-  * Initial routes or index pages with all dependencies in Controller/index.html head
-  * Template/html page for ...
-  * Template/html page for ...
-  * Template/html page for ... (one for each route/integrated user story)
-  * Display...
-  * Integrate feature that...
-
-4. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
-
-5. Polish
-  * Refactor minor portion of...
-  * Delete unused...
-  * Make README awesome
 
 ## Prerequisites
 
