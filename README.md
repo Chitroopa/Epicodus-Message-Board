@@ -1,7 +1,36 @@
-# epicodus-message-board
+# Epicodus message board
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+Epicodus message board allows Epicodus students to ask technical questions that Epicodus alumni, current students(across locations) or staff can answer.
+
+## Planning
+
+1. Configuration/dependencies
+  * Emberfire, firebase db
+  * Emberfire - allows to connect with firebase database
+  * firebase db - create firebase db for this project
+
+2. Specs
+  * Spec 1: Description, input, output.
+  * Spec 2: Description, input, output.
+
+3. Integration
+  * Initial routes or index pages with all dependencies in Controller/index.html head
+  * Template/html page for ...
+  * Template/html page for ...
+  * Template/html page for ... (one for each route/integrated user story)
+  * Display...
+  * Integrate feature that...
+
+4. UX/UI
+  * Include and modify bootstrap/materialize/Sass etc.
+  * Develop custom style
+
+5. Polish
+  * Refactor minor portion of...
+  * Delete unused...
+  * Make README awesome
 
 ## Prerequisites
 
