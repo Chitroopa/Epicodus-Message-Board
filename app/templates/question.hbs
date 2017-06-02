@@ -1,8 +1,8 @@
 <div class="row question-color">
   <div class="col-md-12">
     <h3>{{model.title}}</h3>
-    <!-- <p>{{moment-format model.created 'L'}}</p> -->
-    <p>{{model.created}}</p>
+    <p>{{moment-format model.created 'L'}}</p>
+    <!-- <p>{{model.created}}</p> -->
     <p class="text-style">{{model.content}}</p>
     <p>Notes: {{model.notes}}</p>
     {{edit-question question=model updateQuestion2="updateQuestion3" deleteQuestion2="deleteQuestion3"}}
