@@ -3,6 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   title: DS.attr(),
   content: DS.attr(),
+  shortContent: DS.attr(),
   author: DS.attr(),
   notes: DS.attr(),
   created: DS.attr({
@@ -10,5 +11,5 @@ export default DS.Model.extend({
       return new Date();
     }
   }),
-  // answers: DS.hasMany('answer', { async: true })
+  answers: DS.hasMany('answer', { async: true })
 });

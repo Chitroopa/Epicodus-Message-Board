@@ -4,10 +4,10 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       questions: this.store.findAll('question')
-      // posts: this.store.query('post',{
-        // orderByValue: 'created',
-        // limitToFirst: 5
-      // }),
+    //   posts: this.store.query('post',{
+    //     orderByValue: 'created',
+    //     limitToFirst: 5
+    //   }),
     // }).then((test)=>{
     //     return test.toArray().reverse();
      })

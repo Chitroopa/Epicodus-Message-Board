@@ -10,6 +10,7 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         content: this.get('content'),
+        shortContent : (this.get('content').slice(0, 100)).concat("..."),
         author: this.get('author'),
         notes: this.get('notes'),
       };
